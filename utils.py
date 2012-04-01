@@ -1,7 +1,7 @@
 from subprocess import Popen, PIPE
 
 
-def command(x):
+def sys_command(x):
     return str(Popen(x.split(' '), stdout=PIPE).communicate()[0])
 
 
